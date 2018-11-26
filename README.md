@@ -24,8 +24,5 @@ First project on Hexlet
 <p>
 composer global require li0n0k/brain-games  
 </p>
-<p>
-composer global require li0n0k/brain-even
-</p>
   </body>
 </html>
