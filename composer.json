@@ -1,0 +1,16 @@
+{
+    "name": "li0n0k/brain-games",
+    "description": "Project 1 from Hexlet",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexey Abramov",
+            "email": "li0n0km0nk@gmail.com"
+        }
+    ],
+    "bin": [
+        "bin/brain-games"
+    ],
+    "require": {}
+}
