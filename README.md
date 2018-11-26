@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
   <title>
-    First project on Hexlet  
+ 
   </title>
   </head>
   
@@ -11,6 +11,7 @@
 <p>
 First project on Hexlet 
 </p>
+<hr>
 <a href="https://codeclimate.com/github/lion0k/project-lvl1-s384/maintainability"><img src="https://api.codeclimate.com/v1/badges/14886bac8794dd18a46d/maintainability" /></a>
 <a href="https://codeclimate.com/github/lion0k/project-lvl1-s384/test_coverage"><img src="https://api.codeclimate.com/v1/badges/14886bac8794dd18a46d/test_coverage" /></a>
 
@@ -22,7 +23,7 @@ First project on Hexlet
 
 <a href="https://codeclimate.com/github/lion0k/project-lvl1-s384">
 <img src="https://codeclimate.com/github/codeclimate/codeclimate/badges/gpa.svg"></a>-->
-
+<hr>
 <p>
 composer global require li0n0k/brain-games  
 </p>
