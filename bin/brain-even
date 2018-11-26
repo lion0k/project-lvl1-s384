@@ -1,0 +1,9 @@
+#!/usr/bin/php
+<?php
+
+namespace Project1;
+
+require __DIR__ . '/../vendor/autoload.php';
+
+$game = new BrainEven();
+$game->startGame();
