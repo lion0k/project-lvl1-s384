@@ -9,8 +9,6 @@ namespace Project1;
 
 use function cli\line;
 
-require __DIR__ . '/../vendor/autoload.php';
-
 function run()
 {
     line('Welcome to the Brain Game!' . PHP_EOL);
