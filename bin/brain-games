@@ -1,4 +1,9 @@
 #!/usr/bin/php
 <?php
-  echo "Welcome to the Brain Games!\n"
-?>
+
+namespace Project1;
+
+require __DIR__ . '/../vendor/autoload.php';
+
+run();
+

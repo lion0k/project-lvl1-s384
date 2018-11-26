@@ -12,5 +12,27 @@
     "bin": [
         "bin/brain-games"
     ],
-    "require": {}
+    "scripts": {
+        "phpcs": "phpcs",
+        "phpcbf": "phpcbf",
+        "phpunit": "phpunit",
+        "test": "phpunit tests"
+    },
+    "autoload": {
+        "psr-4": {
+            "Project1\\": "src",
+            "Project1\\Tests\\": "tests"
+        },
+        "files": [
+            "src/Cli.php"
+        ]
+    },
+    "require": {
+        "wp-cli/php-cli-tools": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*",
+        "squizlabs/php_codesniffer": "*",
+        "codeclimate/php-test-reporter": "dev-master"
+    }
 }
