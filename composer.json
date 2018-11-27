@@ -29,7 +29,6 @@
         "wp-cli/php-cli-tools": "*"
     },
     "require-dev": {
-        "squizlabs/php_codesniffer": "*",
-        "codeclimate/php-test-reporter": "dev-master"
+        "squizlabs/php_codesniffer": "*"
     }
 }
