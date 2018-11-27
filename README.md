@@ -32,10 +32,13 @@ All mini-games ask you 3 questions. Your challenge is to answer all questions co
 </ul>     
 <hr>
 <h4>
-Installation
+Installation and usage
 </h4>
 <p>
-composer global require li0n0k/brain-games  
+1) <code>composer global require li0n0k/brain-games</code><br>
+2) Add in your PATH - <code>$HOME/.composer/vendor/bin</code><br>
+3) Run for example <code>brain-even</code><br>
+4) Enjoy! 
 </p>
 <hr>
 
