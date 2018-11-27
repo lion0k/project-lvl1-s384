@@ -1,7 +1,7 @@
 {
     "name": "li0n0k/brain-games",
     "description": "Project 1 from Hexlet",
-    "type": "project",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
@@ -15,14 +15,11 @@
     ],
     "scripts": {
         "phpcs": "phpcs",
-        "phpcbf": "phpcbf",
-        "phpunit": "phpunit",
-        "test": "phpunit tests"
+        "phpcbf": "phpcbf"
     },
     "autoload": {
         "psr-4": {
-            "Project1\\": "src",
-            "Project1\\Tests\\": "tests"
+            "Project1\\": "src"
         },
         "files": [
             "src/Cli.php"
@@ -32,10 +29,7 @@
         "wp-cli/php-cli-tools": "*"
     },
     "require-dev": {
-        "phpunit/phpunit": "*",
         "squizlabs/php_codesniffer": "*",
         "codeclimate/php-test-reporter": "dev-master"
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
