@@ -28,7 +28,7 @@ class BrainEven
     {
         for ($i = 0; $i < 3; $i++) {
             $this->getRandomNumber();
-            $this->question();
+            $this->setQuestion();
             $this->getRightAnswer();
             
             if (! $this->checkResult()) {
@@ -42,23 +42,23 @@ class BrainEven
         $this->endGame();
     }
 
-    public function getRandomNumber()
+    private function getRandomNumber()
     {
         $this->currentNumber = rand(1, 100);
     }
 
-    public function question()
+    private function setQuestion()
     {
         line("Question: {$this->currentNumber}");
         $this->answerPlayer = strtolower(\cli\prompt('Your answer'));
     }
 
-    public function getRightAnswer()
+    private function getRightAnswer()
     {
         $this->rightAnswer = ($this->currentNumber % 2 === 0) ? 'yes' : 'no';
     }
 
-    public function checkResult()
+    private function checkResult()
     {
         if (preg_match('/^(yes|no)?$/', $this->answerPlayer) > 0) {
             return ($this->rightAnswer === $this->answerPlayer) ? true : false;
@@ -66,18 +66,18 @@ class BrainEven
         return false;
     }
 
-    public function wrongAnswer()
+    private function wrongAnswer()
     {
         line("'{$this->answerPlayer}' is wrong answer ;(. Correct answer was '{$this->rightAnswer}'.");
         line("Let's try again, {$this->namePlayer}!");
     }
 
-    public function success()
+    private function success()
     {
-        line('Correct!');
+        line("Correct!\n");
     }
 
-    public function endGame()
+    private function endGame()
     {
         line("Congratulations, {$this->namePlayer}!");
     }

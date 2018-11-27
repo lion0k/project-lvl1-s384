@@ -5,9 +5,9 @@
   
   <body>
   
-<p>
-First project on Hexlet 
-</p>
+<h4>
+First project Brain games on Hexlet 
+</h4>
 <hr>
 <a href="https://codeclimate.com/github/lion0k/project-lvl1-s384/maintainability"><img src="https://api.codeclimate.com/v1/badges/14886bac8794dd18a46d/maintainability" /></a>
 <a href="https://codeclimate.com/github/lion0k/project-lvl1-s384/test_coverage"><img src="https://api.codeclimate.com/v1/badges/14886bac8794dd18a46d/test_coverage" /></a>
@@ -21,8 +21,23 @@ First project on Hexlet
 <a href="https://codeclimate.com/github/lion0k/project-lvl1-s384">
 <img src="https://codeclimate.com/github/codeclimate/codeclimate/badges/gpa.svg"></a>-->
 <hr>
+<h5>
+Descriptions games
+</h5>
+<p>
+All mini-games ask you 3 questions. Your challenge is to answer all questions correctly.
+</p>
+<ul>
+    <li> <b>brain-even</b> - specify if the number is even or not, using only yes or no.</li>
+</ul>     
+<hr>
+<h5>
+Installation
+</h5>
 <p>
 composer global require li0n0k/brain-games  
 </p>
+<hr>
+
   </body>
 </html>
