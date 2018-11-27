@@ -16,15 +16,21 @@ class BrainEven
     private $currentNumber;
     private $rightAnswer;
 
+    public static function startGame()
+    {
+        new self();
+    }
+
     public function __construct()
     {
         line('Welcome to the Brain Game!');
         line('Answer "yes" if number even otherwise answer "no".' . PHP_EOL);
         $this->namePlayer = \cli\prompt('May I have your name?');
         line("Hello, %s!\n", $this->namePlayer);
+        $this->run();
     }
 
-    public function startGame()
+    public function run()
     {
         for ($i = 0; $i < 3; $i++) {
             $this->getRandomNumber();
