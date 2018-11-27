@@ -41,6 +41,11 @@ Installation and usage
 4) Enjoy! 
 </p>
 <hr>
+<h4>
+Example installation and play
+</h4>
+<a href="https://asciinema.org/a/wEXNeHhKsrn3QiZUQmqMditl0" target="_blank">
+<img src="https://asciinema.org/a/wEXNeHhKsrn3QiZUQmqMditl0.svg" /></a>
 
   </body>
 </html>
