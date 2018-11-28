@@ -28,8 +28,9 @@ Descriptions games
 All mini-games ask you 3 questions. Your challenge is to answer all questions correctly.
 </p>
 <ul>
-    <li> <b>brain-even</b> - specify if the number is even or not, using only yes or no.</li>
+    <li><b>brain-even</b> - specify if the number is even or not, using only yes or no.</li>
     <li><b>brain-calc</b> - find a solution to a mathematical expression, like 2 * 9</li>
+    <li><b>brain-gcd</b> - find the greatest common divisor of two numbers, like (55, 40) = 5</li>
 </ul>     
 <hr>
 <h4>
