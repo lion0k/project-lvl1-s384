@@ -1,0 +1,8 @@
+#!/usr/bin/php
+<?php
+
+namespace Project1;
+
+require_once __DIR__ . '/../src/bootstrap.php';
+
+startGameGcd();

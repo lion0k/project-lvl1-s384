@@ -7,11 +7,6 @@
 
 namespace Project1;
 
-function getRandomNumber()
-{
-    return rand(1, 10);
-}
-
 function getRandomOperation()
 {
     $operation = ['+', '-', '*'];
@@ -27,8 +22,8 @@ function startGameCalc()
     $operation = '';
 
     $funcTask = function () use (&$number1, &$number2, &$operation) {
-        $number1 = getRandomNumber();
-        $number2 = getRandomNumber();
+        $number1 = getRandomNumber(10);
+        $number2 = getRandomNumber(10);
         $operation = getRandomOperation();
         return "{$number1} {$operation} {$number2}";
     };
