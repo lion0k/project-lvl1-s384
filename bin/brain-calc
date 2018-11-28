@@ -5,4 +5,4 @@ namespace Project1;
 
 require_once __DIR__ . '/../src/bootstrap.php';
 
-startGameEven();
+startGameCalc();

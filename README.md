@@ -6,7 +6,7 @@
   <body>
   
 <h3>
-First project Brain games on Hexlet 
+Project Brain games on Hexlet 
 </h3>
 <hr>
 <a href="https://codeclimate.com/github/lion0k/project-lvl1-s384/maintainability"><img src="https://api.codeclimate.com/v1/badges/14886bac8794dd18a46d/maintainability" /></a>
@@ -29,6 +29,7 @@ All mini-games ask you 3 questions. Your challenge is to answer all questions co
 </p>
 <ul>
     <li> <b>brain-even</b> - specify if the number is even or not, using only yes or no.</li>
+    <li><b>brain-calc</b> - find a solution to a mathematical expression, like 2 * 9</li>
 </ul>     
 <hr>
 <h4>

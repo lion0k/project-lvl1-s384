@@ -5,5 +5,5 @@ namespace Project1;
 
 require __DIR__ . '/../vendor/autoload.php';
 
-run();
+run('');
 
