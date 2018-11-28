@@ -36,7 +36,12 @@ function startPlay($description, $funcTask, $funcCorrectAnswer, $countTry = COUN
     }
 }
 
-function getRandomNumber($maxNumber)
+function getRandomNumber($minNumber = 1, $maxNumber = 100)
 {
-    return rand(1, $maxNumber);
+    return rand($minNumber, $maxNumber);
+}
+
+function isEven($number)
+{
+    return ($number % 2) === 0;
 }

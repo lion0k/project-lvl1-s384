@@ -11,7 +11,7 @@ const MAX_LENGTH_SEQUENCE = 10;
 
 function getRandomStepProgression($maxNumber)
 {
-    return getRandomNumber($maxNumber);
+    return getRandomNumber(1, $maxNumber);
 }
 
 function getSequence($startNumber, $stepSeq, $lengthSeq = MAX_LENGTH_SEQUENCE)
@@ -37,7 +37,7 @@ function startGameProgression()
     $number = 0;
 
     $funcTask = function () use (&$number) {
-        $startNumber = getRandomNumber(100);
+        $startNumber = getRandomNumber();
         $stepProgression = getRandomStepProgression(20);
         $seq = getSequence($startNumber, $stepProgression);
         $keyFoundNumber = array_rand($seq);

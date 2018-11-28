@@ -22,8 +22,8 @@ function startGameCalc()
     $operation = '';
 
     $funcTask = function () use (&$number1, &$number2, &$operation) {
-        $number1 = getRandomNumber(10);
-        $number2 = getRandomNumber(10);
+        $number1 = getRandomNumber(1, 10);
+        $number2 = getRandomNumber(1, 10);
         $operation = getRandomOperation();
         return "{$number1} {$operation} {$number2}";
     };

@@ -31,8 +31,8 @@ function startGameGcd()
     $number2 = 0;
 
     $funcTask = function () use (&$number1, &$number2) {
-        $number1 = getRandomNumber(100);
-        $number2 = getRandomNumber(100);
+        $number1 = getRandomNumber();
+        $number2 = getRandomNumber();
 
         return "{$number1} {$number2}";
     };

@@ -7,11 +7,6 @@
 
 namespace Project1;
 
-function isEven($number)
-{
-    return ($number % 2) === 0;
-}
-
 function startGameEven()
 {
     $description = 'Answer "yes" if number even otherwise answer "no".';

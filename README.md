@@ -32,6 +32,7 @@ All mini-games ask you 3 questions. Your challenge is to answer all questions co
     <li><b>brain-calc</b> - find a solution to a mathematical expression, like 2 * 9</li>
     <li><b>brain-gcd</b> - find the greatest common divisor of two numbers, like (55, 40) = 5</li>
     <li><b>brain-progression</b> - You are given an arithmetic progression, for example, 8 12 16 20 .. 28 32 36 40 44. You must find the missing number of the sequence.</li>
+    <li><b>brain-prime</b> - specify if the number is prime or not, using only yes or no.</li>
 </ul>     
 <hr>
 <h4>
