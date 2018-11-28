@@ -46,8 +46,10 @@ function startGameCalc()
             case '*':
                 return $number1 * $number2;
                 break;
+
+            default:
+                return '';
         }
-        return '';
     };
 
     startPlay($description, $funcTask, $funcCorrectAnswer);
