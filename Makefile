@@ -16,7 +16,7 @@ reload:
 git: gitadd gitcom gitpush	
 
 gitadd:
-	git add *
+	git add -A .
 
 gitcom:
 	git commit -m "$(COMM)"
