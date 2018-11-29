@@ -17,18 +17,15 @@ function startGameCalc()
 {
     $description = 'What is the result of the expression?';
 
-    $number1 = 0;
-    $number2 = 0;
-    $operation = '';
-
-    $funcTask = function () use (&$number1, &$number2, &$operation) {
+    $funcTask = function () {
         $number1 = getRandomNumber(1, 10);
         $number2 = getRandomNumber(1, 10);
         $operation = getRandomOperation();
         return "{$number1} {$operation} {$number2}";
     };
 
-    $funcCorrectAnswer = function () use (&$number1, &$number2, &$operation) {
+    $funcCorrectAnswer = function ($question) {
+        list($number1, $operation, $number2) = explode(' ', $question);
         switch ($operation) {
             case '+':
                 return $number1 + $number2;

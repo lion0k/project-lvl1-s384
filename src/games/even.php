@@ -12,7 +12,7 @@ function startGameEven()
     $description = 'Answer "yes" if number even otherwise answer "no".';
 
     $funcTask = function () {
-        return rand(1, 50);
+        return getRandomNumber(1, 50);
     };
 
     $funcCorrectAnswer = function ($number) {
