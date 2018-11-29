@@ -1,3 +1,6 @@
+COMM=$(commit)
+VERTAG=$(ver)
+
 install:
 	composer install
 
@@ -10,11 +13,17 @@ lint-fix:
 reload:
 	composer dump-autoload -o
 
-push:
+git: gitadd gitcom gitpush	
+
+gitadd:
 	git add *
-	git commit -m '$(commit)'
+
+gitcom:
+	git commit -m "$(COMM)"
+
+gitpush:
 	git push
 
 release:
-	git tag v1.0.$(ver)
-	git push origin v1.0.$(ver)
+	git tag v1.0.$(VERTAG)
+	git push origin v1.0.$(VERTAG)
