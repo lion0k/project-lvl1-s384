@@ -1,5 +1,5 @@
-COMM=$(commit)
-VERTAG=$(ver)
+COMM=$(c)
+VERTAG=$(v)
 
 install:
 	composer install
