@@ -9,17 +9,16 @@ namespace Project1;
 
 const COUNT_TRY = 3;
 
-function startPlay($description, $funcTask, $funcCorrectAnswer, $countTry = COUNT_TRY)
+function startPlay($description, $funcTask, $countTry = COUNT_TRY)
 {
     $namePlayer = run($description);
 
-    $iter = function ($cnt = 0) use ($countTry, $namePlayer, $funcTask, $funcCorrectAnswer, &$iter) {
+    $iter = function ($cnt = 0) use ($countTry, $namePlayer, $funcTask, &$iter) {
         if ($cnt === $countTry) {
             return true;
         }
-        $task = $funcTask();
-        $answerPlayer = setQuestion($task);
-        $correctAnswer = $funcCorrectAnswer($task);
+        ['question' => $question, 'correctAnswer' => $correctAnswer] = $funcTask();
+        $answerPlayer = setQuestion($question);
 
         if ($answerPlayer != $correctAnswer) {
             printWrongAnswer($answerPlayer, $namePlayer, $correctAnswer);

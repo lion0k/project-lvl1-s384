@@ -12,12 +12,13 @@ function startGameEven()
     $description = 'Answer "yes" if number even otherwise answer "no".';
 
     $funcTask = function () {
-        return getRandomNumber(1, 50);
+        $number = getRandomNumber(1, 50);
+        $correctAnswer = function () use ($number) {
+            return (isEven($number)) ? 'yes' : 'no';
+        };
+
+        return ['question' => $number, 'correctAnswer' => $correctAnswer()];
     };
 
-    $funcCorrectAnswer = function ($number) {
-        return (isEven($number)) ? 'yes' : 'no';
-    };
-
-    startPlay($description, $funcTask, $funcCorrectAnswer);
+    startPlay($description, $funcTask);
 }

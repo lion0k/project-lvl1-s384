@@ -34,12 +34,13 @@ function startGamePrime()
     $description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
     $funcTask = function () {
-        return getRandomNumber();
+        $number = getRandomNumber();
+        $correctAnswer = function () use ($number) {
+            return (isPrime($number)) ? 'yes' : 'no';
+        };
+
+        return ['question' => $number, 'correctAnswer' => $correctAnswer()];
     };
 
-    $funcCorrectAnswer = function ($number) {
-        return (isPrime($number)) ? 'yes' : 'no';
-    };
-
-    startPlay($description, $funcTask, $funcCorrectAnswer);
+    startPlay($description, $funcTask);
 }

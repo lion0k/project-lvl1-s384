@@ -24,14 +24,12 @@ function startGameGcd()
         $number1 = getRandomNumber();
         $number2 = getRandomNumber();
 
-        return "{$number1} {$number2}";
+        $correctAnswer = function () use ($number1, $number2) {
+            return findGcd($number1, $number2);
+        };
+
+        return ['question' => "{$number1} {$number2}", 'correctAnswer' => $correctAnswer()];
     };
 
-    $funcCorrectAnswer = function ($question) {
-        list($number1, $number2) = explode(' ', $question);
-
-        return findGcd($number1, $number2);
-    };
-
-    startPlay($description, $funcTask, $funcCorrectAnswer);
+    startPlay($description, $funcTask);
 }

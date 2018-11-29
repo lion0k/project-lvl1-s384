@@ -39,22 +39,11 @@ function startGameProgression()
         $stepProgression = getRandomStepProgression(10);
         $seq = getSequence($startNumber, $stepProgression);
         $keyFoundNumber = array_rand($seq);
+        $number = $seq[$keyFoundNumber];
         $seq[$keyFoundNumber] = '..';
-        return implode(' ', $seq);
+
+        return ['question' => implode(' ', $seq), 'correctAnswer' => $number];
     };
 
-    $funcCorrectAnswer = function ($task) {
-        $seq = explode(' ', $task);
-        $keyEmpty = array_search('..', $seq);
-        if (isset($seq[$keyEmpty + 1]) && isset($seq[$keyEmpty - 1])) {
-            return (($seq[$keyEmpty + 1] - $seq[$keyEmpty - 1]) / 2 + $seq[$keyEmpty - 1]);
-        }
-        if (! isset($seq[$keyEmpty + 1])) {
-            return (($seq[$keyEmpty - 1] - $seq[$keyEmpty - 2]) + $seq[$keyEmpty - 1]);
-        } else {
-            return ($seq[$keyEmpty + 1] - ($seq[$keyEmpty + 2] - $seq[$keyEmpty + 1]));
-        }
-    };
-
-    startPlay($description, $funcTask, $funcCorrectAnswer);
+    startPlay($description, $funcTask);
 }
